@@ -1,4 +1,4 @@
-# The-MΔth-MΔze
+# THE-MΔTH-MΔZE
 ## My First Project in Python
 
 My checkpoint project submission for Codedex's "The Legend of Python".
