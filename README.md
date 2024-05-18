@@ -22,11 +22,21 @@ This interactive game tests your math skills as you navigate through a challengi
 
 ### How to Play
 
-1. **Start the Game**: The game begins with a prompt asking if you would like to proceed. Choose "Yes" to start or "No" to exit.
+1. **Start the Game**: The game begins with a prompt asking if you would like to proceed. Type in Yes to start or No to exit.
 2. **Solve Math Problems**: Each round presents a different math problem. Enter your answers correctly to move forward.
 3. **Limited Tries**: You have three attempts for each question. If you fail to answer correctly within three tries, the game ends.
 4. **Choose Your Path**: In later rounds, you will need to choose between different paths, each presenting unique challenges.
 
+
+### The Code
+The code is under TheMathMaze1.0_Code.
+Just copy and paste it into python.
+
+### Or view it on Codedex!
+https://www.codedex.io//@blurito/the-math-maze
+
+
+## Thanks for playing!
 
 Copyright [2000] [Christopher Scott]
 
