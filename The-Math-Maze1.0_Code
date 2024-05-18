@@ -1,0 +1,389 @@
+import random
+import sys
+import time
+
+#DEFINE SECTION
+
+##MESSAGE BOX 
+def print_dialogue_box(text):
+    box_width = len(text) + 4
+    print("╔" + "═" * (box_width - 2) + "╗")
+    print("║ " + text + " ║")
+    print("╚" + "═" * (box_width - 2) + "╝")
+
+
+
+##animates
+
+def apple():
+    print('  ,--./,-.')
+    print(' / #      \\')
+    print('|          |')
+    print(' \\        /')
+    print('  `._,._,\'')
+
+
+
+def scale():
+  frame1 =    '            ,ggg,                   gg                   ,ggg,'
+  frame2 =    '           d8P""8b                ,d88b,                d8""Y8b'
+  frame3 =    '           Y8b,__,,aadd88888bbaaa,888888,aaadd88888bbaa,,__,d8P'
+  frame4 =    '            "88888888888888888888I888888I88888888888888888888"'
+  frame5 =    '            /|\\`""YY8888888PP""""`888888\'""""YY8888888PP""\'/|\\'
+  frame6 =    '           / | \\                  `WWWW\'                  / | \\'
+  frame7 =    '          /  |  \\                 ,dMMb,                 /  |  \\'
+  frame8 =    '         /   |   \\                I8888I                /   |   \\'
+  frame9 =    '        /_________\\               `Y88P\'               / ________\\'
+  frame10 =    '       /|    x\u00b2   |\\               `YP\'               / |        |\\'
+  frame11 =    '      / |_________| \\               88               /  |  2 0 0 | \\'
+  frame12 =    '     /  |    x\u00b2   |  \\             i88i             /   |  lbs   |  \\'
+  frame13 =    '    /   |_________|    \\           8888            /    |________|   \\'
+  frame14 =    '"Y88888888888888888888888P"       i8888i       "Y88888888888888888888888P"\''
+  frame15 =    '  `""Y888888888888888P""\'        ,888888,        `""Y888888888888888P""\''
+  frame16 =    '                                 I888888I'
+  frame17 =    '                                 Y888888P'
+  frame18 =    '                                 `Y8888P\'\''
+  frame19 =    '                                  `WWWW\'\''
+  frame20 =    '                                   dMMb'
+  frame21 =    '                                _,ad8888ba,_'
+  frame22 =    '                    __,,aaaadd888888888888888bbaaaa,,__'
+  frame23 =    '                  d8888888888888888888888888888888888888b'
+  frames = [frame1, frame2, frame3, frame4, frame5, frame6, frame7,frame8,frame9,frame10,frame11,frame12,frame13,frame14,frame15,frame16,frame17,frame18,frame19,frame20,frame21,frame22,frame23]
+
+  for frame in frames:
+      for char in frame:
+          sys.stdout.write(char)
+          sys.stdout.flush()
+          time.sleep(0.001)  
+      print()  
+
+def animate():
+    frame1 = " ░▒▓███████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓████████▓▒░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░"
+    frame2 = "░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░"
+    frame3 = " ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░ ░▒▓██████▓▒░ ░▒▓██████▓▒░ ░▒▓███████▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░"
+    frame4 = "       ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░ " 
+    frame5 = "       ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░" 
+    frame6 = "       ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░                  "                   
+    frame7 = "░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░"
+    
+    frames = [frame1, frame2, frame3, frame4, frame5, frame6, frame7]
+    
+    for frame in frames:
+        for char in frame:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.001) 
+        print()  
+
+
+def grr():
+    frame1 = " ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓███████▓▒░ "                      
+    frame2 = "░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ "                     
+    frame3 = "░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ "                    
+    frame4 = "░▒▓█▓▒▒▓███▓▒░▒▓███████▓▒░░▒▓███████▓▒░  "                   
+    frame5 = "░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░   "                   
+    frame6 = "░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██▓▒░▒▓██▓▒░▒▓██▓▒░" 
+    frame7 = " ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓██▓▒░▒▓██▓▒░▒▓██▓▒░" 
+
+    frames = [frame1, frame2, frame3, frame4, frame5, frame6, frame7]
+
+    for frame in frames:
+        for char in frame:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.001)  
+        print() 
+
+## stacked dialogue
+def print_stacked_dialogue_box(text):
+    lines = text.split('\n')
+    max_length = max(len(line) for line in lines)
+    box_width = max_length + 4
+
+    print("╔" + "═" * (box_width - 2) + "╗")
+    for line in lines:
+        print("║ " + line.ljust(max_length) + " ║")
+    print("╚" + "═" * (box_width - 2) + "╝")
+
+
+def dialogue_box(text):
+    lines = text.split('\n')
+    max_length = max(len(line) for line in lines)
+    box_width = max_length + 4
+
+    print("╔" + "═" * (box_width - 2) + "╗")
+    for line in lines:
+        print("║ ", end="")
+        for char in line.ljust(max_length):
+            print(char, end="", flush=True)
+            time.sleep(0.02)  
+        print(" ║")
+    print("╚" + "═" * (box_width - 2) + "╝")
+
+
+##loading bar
+def loading_maze():
+    maze = "█" * 10
+    for i in range(10):
+        sys.stdout.write('\r')
+        sys.stdout.write(maze[:i] + "░" + maze[i+1:])
+        sys.stdout.flush()
+        time.sleep(0.1)
+    print('')
+    
+
+
+
+# TITLE
+print(' ______   __  __     ______        __    __     ______     ______   __  __        __    __     ______     ______     ______ ')   
+print('/\__  _\ /\ \_\ \   /\  ___\      /\ "-./  \   /\  __ \   /\__  _\ /\ \_\ \      /\ "-./  \   /\  __ \   /\___  \   /\  ___\ ')   
+print('\/_/\ \/ \ \  __ \  \ \  __\      \ \ \-./\ \  \ \  __ \  \/_/\ \/ \ \  __ \     \ \ \-./\ \  \ \  __ \  \/_/  /__  \ \  __\ ')   
+print('   \ \_\  \ \_\ \_\  \ \_____\     \ \_\ \ \_\  \ \_\ \_\    \ \_\  \ \_\ \_\     \ \_\ \ \_\  \ \_\ \_\   /\_____\  \ \_____\ ')  
+print('    \/_/   \/_/\/_/   \/_____/      \/_/  \/_/   \/_/\/_/     \/_/   \/_/\/_/      \/_/  \/_/   \/_/\/_/   \/_____/   \/_____/' ) 
+                                                                                                                               
+
+print_dialogue_box('                                        Can your math skills help you escape?                                              ')
+
+
+
+def print_dialogue_box(text):
+    box_width = len(text) + 4
+    print("╔" + "═" * (box_width - 2) + "╗")
+    print("║ ", end="")
+    for char in text:
+        print(char, end="", flush=True)
+        time.sleep(0.02)   
+    print(" ║")
+    print("╚" + "═" * (box_width - 2) + "╝")
+
+
+
+# Enter text
+print_stacked_dialogue_box(
+    "Welcome to The Math Maze Traveller!\n"
+    "\n"
+    "The instructions are simple really, this isn't your average maze. You may only advance if you answer the math questions correctly.\n"\
+    "\n"
+    "You have three tries before you pay the ultimate price..."
+)
+
+
+
+
+while True:
+        user_input = input("Would you like to proceed? Yes or No: ").lower()
+        if user_input == "no":
+            print("Exiting...")
+        elif user_input == "yes":
+          print('Proceed...')
+          break
+
+
+#ROUND 1
+
+x = random.randint(1, 9)
+y = random.randint(1, 9)
+z = x + y
+tries = 0
+
+while tries < 3:
+    print(x, "+", y, "= z")
+    user_input = float(input("What is z?: "))
+    if user_input == z:
+        loading_maze()
+        print_dialogue_box("You may proceed...")
+        break
+    else:
+        tries += 1
+        if tries == 3:  
+            print("GAME OVER")
+            animate()   
+            sys.exit()
+        else:
+            print("Incorrect answer. Try again...")
+
+# ROUND 2
+a = random.randint(1, 2) * 2 
+b = random.randint(1, a // 2) * 2 
+tries = 0
+z = a / b + x 
+
+while tries < 3:
+    print(a, "/", b , "+", x, "= z")
+    user_input = float(input("What is ? "))
+    if user_input == z:
+        loading_maze()
+        print_dialogue_box("Good...")
+        print_dialogue_box('Let\'s make this more interesting..')
+        break
+    else:
+        tries +=1
+        if tries == 3:
+            print('GAME OVER')
+            animate()
+            sys.exit()
+        else:
+            print("Incorrect answer. Try again..")
+
+
+
+# ROUND 3 
+
+
+tries = 0
+
+while tries < 3:
+    question_text = (
+    'For:\n'
+    '\n'
+    '12/x = 7 - x\n'
+    '\n'
+    'Which TWO of the four following numbers\n'
+    "\n"
+    "1 - 2 - 3 - 4.\n"\
+    "\n"
+    "Are equal to x?: ")
+    print(question_text)
+    print('Answering format must be \'_ and _ \'.')
+    print('Don\'t piss me off.\n') 
+    user_input = input('Solve for x: ').lower()
+    if 'and' not in user_input:
+        print('I told you not to piss me off.')
+        animate()
+        break
+    elif '3' in user_input and '4' in user_input:
+        loading_maze()
+        print_dialogue_box("Good job. Keep moving.")
+        break
+    else:
+        tries += 1
+        if tries == 3:
+            print('GAME OVER')
+            animate()
+            sys.exit()
+        else:
+            print("Incorrect answer. try again..")
+
+# ROUND 4
+
+# left
+def left():
+    tries = 0 
+    print_stacked_dialogue_box("You take the left path and walk only a few feet until you encounter a hovering scale.\n"
+                              "It seems to be waiting for you to balance it.")
+    scale()
+    print_stacked_dialogue_box("There seems to be two boxes on the left side labled \'x\u00b2\' and a weight of 200 lbs on the right.\n"
+    'What is the weight of ONE box?')
+    while tries < 3:
+      userinput = input('If 2x\u00b2 = 200?\n'
+      'What is x\u00b2?: ') 
+      if userinput == '100':
+        loading_maze()
+        print("Nicely Done.")
+        break
+      else:
+        tries +=1
+        if tries == 3:
+            print('GAME OVER')
+            animate()
+            sys.exit()
+        else:
+            print("Incorrect answer. Try again..")
+
+
+#right
+def right():
+    tries = 0 
+    print_stacked_dialogue_box("You turn right and walk down a few feet until you encounter a basket with price tag of $20.\n"
+            "There seem to be three bags of apples in the basket each weighing 5 lbs.\n"
+            "Which equation can we use to find the cost of a pound of apples?")
+
+    print_stacked_dialogue_box(
+    'a) 20 = 5p\n'
+    'b) p = 20 * 5\n'
+    'c) p + 5 = 20'
+)
+    apple()
+    while tries < 3:
+      userinput = input('Your answer: ').lower()
+      if userinput == 'a':
+        loading_maze()
+        print("Nicely Done.")
+        break
+      else:
+        tries +=1
+        if tries == 3:
+            print('GAME OVER')
+            animate()
+            sys.exit()
+        else:
+            print("Incorrect answer. Try again..")
+
+
+
+# Example usage:
+print_stacked_dialogue_box("You walk down a narrow, seemingly never-ending stone pathway.\n"
+        "The air smells of morning dew.\n"
+        "Before you is a sign with two arrows, each pointing to a different path: Left or Right.\n"
+        "Which path will you take?")
+
+
+
+
+inputs = 0
+
+while inputs < 3:
+  userinput = input("Left or Right?: ").lower()
+  if userinput == 'left':
+    left()
+    break
+  elif userinput == 'right':
+    right()
+    break
+  elif userinput != 'left' or 'right':
+    inputs += 1
+    if inputs == 3:  
+      print("GAME OVER")
+      animate()   
+      sys.exit()
+    else:
+      print('Do you want to get swallowed by the abyss?')
+
+
+def outro(text):
+    lines = text.split('\n')
+    max_length = max(len(line) for line in lines)
+    box_width = max_length + 4
+
+    print("╔" + "═" * (box_width - 2) + "╗")
+    for line in lines:
+        print("║ ", end="")
+        for char in line.ljust(max_length):
+            print(char, end="", flush=True)
+            time.sleep(0.05)  
+        print(" ║")
+    print("╚" + "═" * (box_width - 2) + "╝")
+
+    
+
+
+
+grr()
+
+outro("I see you've made it this far.\n"
+'Nicely done.\n'
+'..... What?\n'
+'You thought this was the end?\n'
+'This is only the beginning.\n'
+'So keep going.')
+
+
+
+
+print(
+    ' ______   ______        ______     ______        ______     ______     __   __     ______   __     __   __     __  __     ______     _____\n'    
+    '/\__  _\ /\  __ \      /\  == \   /\  ___\      /\  ___\   /\  __ \   /\ "-.\ \   /\__  _\ /\ \   /\ "-.\ \   /\ \/\ \   /\  ___\   /\  __-.\n'  
+    '\/_/\ \/ \ \ \/\ \     \ \  __<   \ \  __\      \ \ \____  \ \ \/\ \  \ \ \-.  \  \/_/\ \/ \ \ \  \ \ \-.  \  \ \ \_\ \  \ \  __\   \ \ \/\ \n' 
+    '   \ \_\  \ \_____\     \ \_____\  \ \_____\     \ \_____\  \ \_____\  \ \_\\ "\_\    \ \_\  \ \_\  \ \_\\ \_ \  \ \_____\  \ \_____\  \ \____\- __ __ __ \n' 
+    '    \/_/   \/_____/      \/_____/   \/_____/      \/_____/   \/_____/   \/_/ \/_/     \/_/   \/_/   \/_/ \/_/   \/_____/   \/_____/   \/____/ (__|__|__)\n'
+)
